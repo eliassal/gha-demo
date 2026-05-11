@@ -10,3 +10,20 @@ jobs:
         run: |
           echo "This is line one"
           echo "This is line two"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Step
+        run: echo "A demo build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Step
+        run: echo "A demo test"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Step
+        run: echo "A deploy test"
+    
