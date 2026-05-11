@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: Hello Step
         run: echo "Welcome to GHA"
+      - name: muiltiple hello step
+        run: |
+          echo "This is line one"
+          echo "This is line two"
