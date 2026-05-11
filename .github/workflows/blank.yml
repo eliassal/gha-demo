@@ -1,5 +1,15 @@
 name: Hello World
-on: push
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
 jobs:
   hello:
     runs-on: ubuntu-latest
@@ -10,7 +20,7 @@ jobs:
         run: |
           echo "This is line one"
           echo "This is line two"
-          echo "This is line two"
+          echo "Hello, ${{MY_NAME}"
   build:
     runs-on: ubuntu-latest
     needs: hello
