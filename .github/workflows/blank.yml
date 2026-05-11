@@ -5,7 +5,7 @@ on:
       - main
       - develop
       - 'release/**'
-      - 'feature/pr_demo
+      - 'feature/pr_demo'
   pull_request:
     types:
       - opened
