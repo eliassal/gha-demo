@@ -21,6 +21,7 @@ jobs:
           echo "This is line one"
           echo "This is line two"
           echo "Hello, ${{vars.MY_NAME}}"
+          echo "Docker password: ${{ secrets.DOCKER_PASSWORD }}"
   build:
     runs-on: ubuntu-latest
     needs: hello
