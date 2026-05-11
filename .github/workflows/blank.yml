@@ -6,6 +6,8 @@ on:
       - develop
       - 'release/**'
   pull_request:
+    types:
+      - opened
     branches:
       - main
 jobs:
@@ -18,7 +20,7 @@ jobs:
         run: |
           echo "This is line one"
           echo "This is line two"
-          echo "This is line three"
+          echo "Hello, ${{MY_NAME}"
   build:
     runs-on: ubuntu-latest
     needs: hello
