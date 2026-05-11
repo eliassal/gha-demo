@@ -1,5 +1,5 @@
 name: Hello World
-on: workflow_dispatch
+on: push
 jobs:
   hello:
     runs-on: ubuntu-latest
@@ -9,6 +9,7 @@ jobs:
       - name: muiltiple hello step
         run: |
           echo "This is line one"
+          echo "This is line two"
           echo "This is line two"
   build:
     runs-on: ubuntu-latest
@@ -29,4 +30,3 @@ jobs:
     steps:
       - name: Deploy Step
         run: echo "A deploy test"
-    
