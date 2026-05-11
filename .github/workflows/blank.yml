@@ -24,7 +24,7 @@ jobs:
           echo "Hello, ${{vars.MY_NAME}}"
           echo "Docker password: ${{ secrets.DOCKER_PASSWORD }}"
       - name: Checkout source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Print asp file content
         run: cat index.asp
   build:
