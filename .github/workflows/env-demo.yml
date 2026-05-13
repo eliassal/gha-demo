@@ -7,4 +7,18 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Env Demo Step
-              run: echo "Hello, $APP_ENV"
+              run: echo "Hello, $APP_ENV from workflow level"
+    env_demo_VariableOnJobsLevel:
+        runs-on: ubuntu-latest
+        env:
+            APP_ENV: "prod"
+        steps:
+            - name: Env Demo Step Job Level
+              run: echo "Hello, $APP_ENV from job level"
+    env_demo_VariableOnStepsLevel:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Env Demo Step Step Level
+              env:
+                  APP_ENV: "staging"
+              run: echo "Hello, $APP_ENV from step level"
