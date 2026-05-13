@@ -1,0 +1,15 @@
+name: Build & Deploy
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        types:
+            - opened
+            - synchronize
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Build Step
+              run: echo "Building te application"
