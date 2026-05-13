@@ -1,0 +1,19 @@
+name: If Demo
+on: workflow_dispatch
+jobs:
+    demo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run if branch is main
+              if: github.ref_name == 'main'
+              run: echo "Running for main branch"
+            - name: Run this step
+              run: echo "Running this step"
+    demo2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run if branch is main
+              if: github.ref == 'refs/heads/main'
+              run: echo "Running for main or develop branch"
+            - name: Run this step
+              run: echo "Running this step using ref only without name"
