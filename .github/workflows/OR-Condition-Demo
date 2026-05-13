@@ -1,0 +1,9 @@
+name: Or Condition Demo
+on: workflow_dispatch
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for Salam or eliassal
+        if: github.actor == 'salam' || github.actor == 'eliassal'
+        run: echo "It is triggered by either Hari or by ${{ github.actor }}"
