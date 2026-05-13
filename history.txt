@@ -1,0 +1,53 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.004 cd C:\Projects\AzureDevOpsProjects\Git-Manip\GitHubActions-Guide
+   2        1.784 git clone https://github.com/eliassal/gha-demo.git
+   3        0.040 ls
+   4        0.003 cd gha-demo
+   5        7.413 code .
+   6        0.278 git status
+   7        0.198 git status
+   8        0.067 git status
+   9        0.237 git status
+  10        0.861 git fetch
+  11        0.070 git status
+  12        4.115 git pull
+  13        0.449 git status
+  14        0.576 git fetch origin
+  15        0.156 git status
+  16        0.235 git status
+  17        7.626 git commit -am "push trigger demo"
+  18        6.715 git push origin main
+  19        0.067 git branch feature/pr_demo
+  20        0.279 git checkout feature/pr_demo
+  21        0.068 git status
+  22        0.402 git commit -am "pre trigger demo2"
+  23        2.464 git push origin feature/pr_demo
+  24        0.840 git commit -am "added variable MY_NAME"
+  25        2.218 git push origin feature/pr_demo
+  26        0.071 git status
+  27        0.391 git commit -am "added variable MY_NAME 2nd run"
+  28        1.977 git push origin feature/pr_demo
+  29        0.358 git commit -am "added variable MY_NAME forgot vars"
+  30        2.035 git push origin feature/pr_demo
+  31        0.370 git commit -am "added secret variable dockerpassword"
+  32        0.391 git commit -am "added feature/pr_demo in push ops"
+  33        1.982 git push origin feature/pr_demo
+  34        0.413 git commit -am "added feature/pr_demo forgot 1 quote"
+  35        1.953 git push origin feature/pr_demo
+  36        0.070 git status
+  37        7.796 github pull
+  38        0.372 git commit -am "added inde asp to do action checkout"
+  39        2.145 git push origin feature/pr_demo
+  40        0.368 git commit -am "added inde asp to do action V4 checkout"
+  41        2.039 git push origin feature/pr_demo
+  42        0.378 git commit -am "added inde asp to do action V6 checkout"
+  43        2.098 git push origin feature/pr_demo
+  44        1.303 git push origin feature/pr_demo
+  45        0.063 git add .
+  46        0.071 git status
+  47        0.161 git commit -am "added index asp"
+  48        2.033 git push origin feature/pr_demo
+  49        0.043 history
+
