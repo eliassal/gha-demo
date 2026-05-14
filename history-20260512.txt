@@ -1,0 +1,11 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.005 cd C:\Projects\AzureDevOpsProjects\Git-Manip\GitHubActions-Guide\gha-demo
+   2        0.073 git status
+   3        0.043 ls
+   4        0.068 history
+   5        0.143 git branch feature/if_demo
+   6       24.136 dit checkout feature/if_demo
+   7        0.143 git checkout feature/if_demo
+
